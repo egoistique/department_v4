@@ -18,6 +18,16 @@
             margin: 0;
         }
 
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
         .header {
             position: absolute;
             top: 10px;
