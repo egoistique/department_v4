@@ -13,9 +13,9 @@ import java.util.List;
 
 @Injectable
 public class EmployeeDAO implements DAO<Employee>{
-//    @Inject
-//    private final EmployeeORM employeeORM = BeanFactory.getInstance().getBean(EmployeeORM.class);
-    private final EmployeeORM employeeORM = new EmployeeORM();
+    @Inject
+    private final EmployeeORM employeeORM = BeanFactory.getInstance().getBean(EmployeeORM.class);
+ //   private final EmployeeORM employeeORM = new EmployeeORM();
 
     public EmployeeDAO() throws SQLException {
     }

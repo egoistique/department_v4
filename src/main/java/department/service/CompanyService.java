@@ -16,13 +16,13 @@ import java.util.List;
 
 @Injectable
 public class CompanyService {
-//    @Inject
-//    private final DepartmentDAO departmentRepository = BeanFactory.getInstance().getBean(DepartmentDAO.class);
-//    @Inject
-//    private final EmployeeDAO employeeRepository= BeanFactory.getInstance().getBean(EmployeeDAO.class);
+    @Inject
+    private final DepartmentDAO departmentRepository = BeanFactory.getInstance().getBean(DepartmentDAO.class);
+    @Inject
+    private final EmployeeDAO employeeRepository= BeanFactory.getInstance().getBean(EmployeeDAO.class);
 
-    private final DepartmentDAO departmentRepository = new DepartmentDAO();
-    private final EmployeeDAO employeeRepository= new EmployeeDAO();
+//    private final DepartmentDAO departmentRepository = new DepartmentDAO();
+//    private final EmployeeDAO employeeRepository= new EmployeeDAO();
 
 //    private final DepartmentRepository departmentRepository = new DepartmentRepository();
 //    private final EmployeeRepository employeeRepository= new EmployeeRepository();

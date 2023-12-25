@@ -19,10 +19,10 @@ import java.util.List;
 @Injectable
 public class DepartmentORM {
     private final Connection connection;
-//    @Inject
-//    DatabaseConnectionManager connectionManager = BeanFactory.getInstance().getBean(DatabaseConnectionManager.class);
+    @Inject
+    DatabaseConnectionManager connectionManager = BeanFactory.getInstance().getBean(DatabaseConnectionManager.class);
 
-    DatabaseConnectionManager connectionManager = new DatabaseConnectionManager();
+   // DatabaseConnectionManager connectionManager = new DatabaseConnectionManager();
 
     public DepartmentORM() throws SQLException {
         connection = connectionManager.openConnection();

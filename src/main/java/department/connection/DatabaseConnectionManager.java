@@ -10,9 +10,9 @@ import java.sql.SQLException;
 
 @Injectable
 public class DatabaseConnectionManager {
-//    @Inject
-//    ConnectionConfiguration configuration = BeanFactory.getInstance().getBean(ConnectionConfiguration.class);
-    ConnectionConfiguration configuration = new ConnectionConfiguration();
+    @Inject
+    ConnectionConfiguration configuration = BeanFactory.getInstance().getBean(ConnectionConfiguration.class);
+  //  ConnectionConfiguration configuration = new ConnectionConfiguration();
     public Connection openConnection() throws SQLException {
         try {
             Class.forName("org.postgresql.Driver");

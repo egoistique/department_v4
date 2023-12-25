@@ -12,10 +12,10 @@ import java.util.List;
 
 @Injectable
 public class DepartmentDAO implements DAO<Department> {
-//    @Inject
-//    private final DepartmentORM departmentORM = BeanFactory.getInstance().getBean(DepartmentORM.class);
+    @Inject
+    private final DepartmentORM departmentORM = BeanFactory.getInstance().getBean(DepartmentORM.class);
 
-    private final DepartmentORM departmentORM = new DepartmentORM();
+   // private final DepartmentORM departmentORM = new DepartmentORM();
 
     public DepartmentDAO() throws SQLException {
     }

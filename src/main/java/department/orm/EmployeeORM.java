@@ -16,9 +16,9 @@ import java.util.List;
 
 public class EmployeeORM {
     private Connection connection;
-//    @Inject
-//    DatabaseConnectionManager connectionManager = BeanFactory.getInstance().getBean(DatabaseConnectionManager.class);
-    DatabaseConnectionManager connectionManager = new DatabaseConnectionManager();
+    @Inject
+    DatabaseConnectionManager connectionManager = BeanFactory.getInstance().getBean(DatabaseConnectionManager.class);
+   // DatabaseConnectionManager connectionManager = new DatabaseConnectionManager();
     public EmployeeORM() throws SQLException {
         connection = connectionManager.openConnection();
     }

@@ -2,6 +2,7 @@ package department.servlet;
 
 import department.data.model.Department;
 import department.data.model.Employee;
+import department.di.factory.BeanFactory;
 import department.service.CompanyService;
 
 import javax.servlet.ServletConfig;
@@ -20,7 +21,8 @@ import java.util.Map;
 @WebServlet("/departments")
 public class DepartmentServlet extends HttpServlet {
 
-    private final CompanyService service = new CompanyService();
+    //private final CompanyService service = new CompanyService();
+    private final CompanyService service  = BeanFactory.getInstance().getBean(CompanyService.class);;
 
     public DepartmentServlet() throws SQLException {
     }
