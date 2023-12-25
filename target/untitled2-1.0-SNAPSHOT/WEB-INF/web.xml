@@ -46,6 +46,4 @@
         <servlet-name>UpdateEmployeeServlet</servlet-name>
         <url-pattern>/updateEmployee</url-pattern>
     </servlet-mapping>
-
-
 </web-app>
